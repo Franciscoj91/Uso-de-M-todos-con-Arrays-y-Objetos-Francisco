@@ -102,6 +102,20 @@ consultasDeIsapre.forEach((elemento) => {
     document.write(`<p>${elemento.paciente} - ${elemento.prevision}</p>`)
 })
 
+//Requerimiento 6 
+
+// Filtrar aquellos pacientes que indican ser de FONASA en la lista de consultas médicas de Traumatología
+
+document.write('<h2 class="centrado">Requerimiento 6</h2>')
+
+let consultasDeFonasa = traumatologia.filter((elemento) => {
+    return elemento.prevision === 'FONASA'
+});
+
+consultasDeFonasa.forEach((elemento) => {
+    document.write(`<p>${elemento.paciente} - ${elemento.prevision}</p>`)
+})
+
 
 
 

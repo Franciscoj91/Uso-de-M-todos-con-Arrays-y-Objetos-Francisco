@@ -28,13 +28,7 @@ let dental = [
     { hora: '14:00', especialista: 'RAQUEL VILLASECA', paciente: 'ANA SEPULVEDA', rut: '14441281-0', prevision: 'ISAPRE' },
 ];
 
-//Agregar código para el desafio 2 aquí
 
-
-
-
-
-// Requerimiento 1
 
 
 traumatologia.push(
@@ -45,35 +39,20 @@ traumatologia.push(
     { hora: '12:00', especialista: 'MATIAS ARAVENA', paciente: 'SUSANA POBLETE', rut: '14345656-6', prevision: 'FONASA' }
 );
 
-// Requerimiento 2 
-
-// eliminar el ultimo elemento de radiologia
-
-
 
 radiologia.pop()
 
-//eliminar el primer elemento de radiologia
-
-
 radiologia.shift()
 
-// Requerimiento 3
-
-//recorrer el arreglo
 
 document.write('<h2 class="centrado">Requerimiento 3</h2>')
 
 dental.forEach((elemento) => {
 
-    // imprimir con document.write cada uno de los datos del arreglo dental.
+    
     document.write(`<p>${elemento.hora} - ${elemento.especialista} - ${elemento.paciente} - ${elemento.rut} - ${elemento.prevision}</p>`)
 });
 
-// Requerimiento 4 
-
-
-//  Imprimir un listado total de todos los pacientes que se atendieron en el centro médico.  Para esto, deberá unir todos los nombres de pacientes e imprimir uno por cada párrafo 
 
 document.write('<h2 class="centrado">Listado de pacientes:</h2>');
 
@@ -81,16 +60,10 @@ document.write('<h2 class="centrado">Listado de pacientes:</h2>');
 const listadoDeTodasLasHoras = radiologia.concat(traumatologia, dental);
 
 
-//recorrer el arreglo con todos los pacientes
-
 listadoDeTodasLasHoras.forEach((elemento) => {
-    // imprimir con document.write cada uno de los datos del arreglo dental.
     document.write(`<p>${elemento.paciente}</p>`);
 });
 
-//Requerimiento 5
-
-//Filtrar aquellos pacientes que indican ser de ISAPRE en la lista de consultas médicas de Dental e imprimirlo
 
 document.write('<h2 class="centrado">Requerimiento 5</h2>')
 
@@ -102,9 +75,7 @@ consultasDeIsapre.forEach((elemento) => {
     document.write(`<p>${elemento.paciente} - ${elemento.prevision}</p>`)
 })
 
-//Requerimiento 6 
 
-// Filtrar aquellos pacientes que indican ser de FONASA en la lista de consultas médicas de Traumatología
 
 document.write('<h2 class="centrado">Requerimiento 6</h2>')
 
@@ -117,41 +88,6 @@ consultasDeFonasa.forEach((elemento) => {
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Agregar código para el desafio 2 aquí
 
 document.write(`<p class="texto-verde">Cantidad de atenciones para Radiología: ${radiologia.length} pacientes</p>`);
 document.write(`<p>Cantidad de atenciones para Traumatología: ${traumatologia.length}</p>`);

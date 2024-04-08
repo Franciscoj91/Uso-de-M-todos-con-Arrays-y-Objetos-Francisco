@@ -66,9 +66,6 @@ document.write('<h2 class="centrado">Requerimiento 3</h2>')
 
 dental.forEach((elemento) => {
 
-    //TODO Eliminar consoles.log
-    console.log(elemento)
-
     // imprimir con document.write cada uno de los datos del arreglo dental.
     document.write(`<p>${elemento.hora} - ${elemento.especialista} - ${elemento.paciente} - ${elemento.rut} - ${elemento.prevision}</p>`)
 });
@@ -91,6 +88,19 @@ listadoDeTodasLasHoras.forEach((elemento) => {
     document.write(`<p>${elemento.paciente}</p>`);
 });
 
+//Requerimiento 5
+
+//Filtrar aquellos pacientes que indican ser de ISAPRE en la lista de consultas médicas de Dental e imprimirlo
+
+document.write('<h2 class="centrado">Requerimiento 5</h2>')
+
+let consultasDeIsapre = dental.filter((elemento) => {
+    return elemento.prevision === 'ISAPRE'
+});
+
+consultasDeIsapre.forEach((elemento) => {
+    document.write(`<p>${elemento.paciente} - ${elemento.prevision}</p>`)
+})
 
 
 

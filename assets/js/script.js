@@ -58,6 +58,23 @@ radiologia.pop()
 
 radiologia.shift()
 
+// Requerimiento 3
+
+//recorrer el arreglo
+
+document.write('<h2 class="centrado">Requerimiento 3</h2>')
+
+dental.forEach((elemento) => {
+    
+    console.log(elemento)
+    // imprimir con document.write cada uno de los datos del arreglo dental.
+    document.write(`<p>${elemento.hora} - ${elemento.especialista} - ${elemento.paciente} - ${elemento.rut} - ${elemento.prevision}</p>`)
+});
+
+
+
+
+
 
 
 

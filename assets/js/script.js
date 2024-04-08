@@ -45,6 +45,19 @@ traumatologia.push(
     {hora: '12:00', especialista: 'MATIAS ARAVENA', paciente: 'SUSANA POBLETE', rut: '14345656-6', prevision: 'FONASA'}
 );
 
+// Requerimiento 2 
+
+// eliminar el ultimo elemento de radiologia
+
+
+
+radiologia.pop()
+
+//eliminar el primer elemento de radiologia
+
+
+radiologia.shift()
+
 
 
 
